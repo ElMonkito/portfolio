@@ -47,7 +47,7 @@ export default function LandingPage() {
                                 wordWrap: "break-word"
                             }}
                         >
-                            CFC Développement d'applications
+                            CFC Développement d'application
                         </Typography>
                     </Box>
                 </Slide>
