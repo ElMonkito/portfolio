@@ -56,7 +56,7 @@ export default function LandingPage() {
             <Box
                 sx={{
                     width: { xs: "100%", md: "50%" },
-                    height: "100%", // 🔥 S'assure que le Box parent a une hauteur correcte
+                    height: "100%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
