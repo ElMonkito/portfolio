@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import LandingPage from "./components/landingPage";
 import About from "./components/about"
-import Parcours from "./components/test"
+import Parcours from "./components/parcours"
 import Footer from "./components/footer"
 import Box from "@mui/material/Box";
 

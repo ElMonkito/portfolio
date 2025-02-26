@@ -26,7 +26,6 @@ export default function Navbar() {
         { label: "À propos", path: "apropos" },
         { label: "Parcours", path: "parcours" },
         { label: "Projets", path: "projets" },
-        { label: "Contact", path: "contact" },
     ];
 
     return (
