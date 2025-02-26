@@ -5,10 +5,11 @@ import About from "./components/about"
 import Parcours from "./components/parcours"
 import Footer from "./components/footer"
 import Box from "@mui/material/Box";
+import '../src/App.css'
 
 export default function App() {
     return (
-        <Box sx={{ minHeight: "100vh", overflowY: "auto" }}>
+        <Box sx={{ minHeight: "100vh", overflowY: "auto" }} >
             <Navbar />
 
             <Box id="accueil">
