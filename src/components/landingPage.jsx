@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
-import { Slide } from "@mui/material";
-import { useEffect, useState } from "react";
+import {Slide} from "@mui/material";
+import {useEffect, useState} from "react";
 import Typography from "@mui/material/Typography";
 import Carousel from "./caoursel"
 
@@ -18,15 +18,15 @@ export default function LandingPage() {
         <Box
             sx={{
                 backgroundColor: "#0D1321",
-                height: {xs: "71vh", md: "76.4vh"},
+                height: {xs: "70vh", md: "75vh"},
                 display: "flex",
-                flexDirection: { xs: "column", md: "row" },
+                flexDirection: {xs: "column", md: "row"},
                 overflow: "hidden",
             }}
         >
             <Box
                 sx={{
-                    width: { xs: "100%", md: "50%" },
+                    width: {xs: "100%", md: "50%"},
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -35,13 +35,15 @@ export default function LandingPage() {
             >
                 <Slide direction="top" in={visible} timeout={800}>
                     <Box sx={{maxWidth: "100%", marginTop: {xs: "7%", md: "0%"}}}>
-                        <Typography variant="h1" sx={{ color: "#C5D86D", fontSize: {xs: "3.3rem", md: "6rem"} }}>Valentin Roth</Typography>
+                        <Typography variant="h1" sx={{color: "#C5D86D", fontSize: {xs: "3.3rem", md: "6rem"}}}>
+                            Valentin Roth
+                        </Typography>
                         <Typography
                             variant="h5"
                             sx={{
                                 color: "#FFEDDF",
                                 textAlign: "right",
-                                fontSize: { xs: "1rem", md: "1.5rem" },
+                                fontSize: {xs: "1rem", md: "1.5rem"},
                                 maxWidth: "100%",
                                 overflow: "hidden",
                                 wordWrap: "break-word"
@@ -52,18 +54,19 @@ export default function LandingPage() {
                     </Box>
                 </Slide>
             </Box>
-
-            <Box
-                sx={{
-                    width: { xs: "100%", md: "50%" },
-                    height: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                }}
-            >
-                <Carousel />
-            </Box>
+            <Slide direction="left" in={visible} timeout={800}>
+                <Box
+                    sx={{
+                        width: {xs: "100%", md: "50%"},
+                        height: "100%",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                    }}
+                >
+                    <Carousel/>
+                </Box>
+            </Slide>
         </Box>
     );
 }

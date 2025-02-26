@@ -1,19 +1,34 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import LandingPage from "./components/landingPage";
-import Test from "./components/test";
+import About from "./components/about"
+import Parcours from "./components/test"
+import Box from "@mui/material/Box";
 
 export default function App() {
     return (
-        <Router>
-            <>
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/parcours" element={<Test />} />
-                </Routes>
-            </>
-        </Router>
+        <Box sx={{ minHeight: "100vh", overflowY: "auto" }}>
+            <Navbar />
+
+            <Box id="accueil">
+                <LandingPage />
+            </Box>
+
+            <Box id="apropos">
+                <About />
+            </Box>
+
+            <Box id="parcours">
+                <Parcours />
+            </Box>
+
+            {/*<Box id="projets">*/}
+            {/*    <Projects />*/}
+            {/*</Box>*/}
+
+            {/*<Box id="contact">*/}
+            {/*    <Contact />*/}
+            {/*</Box>*/}
+        </Box>
     );
 }

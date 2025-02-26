@@ -5,10 +5,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Button, IconButton, Drawer, List, ListItem, ListItemText, createTheme, ThemeProvider } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-scroll";
+import content from "../data/content.json";
 
 const theme = createTheme({
     typography: {
-        fontFamily: "Rubik"
+        fontFamily: "Rubik",
     },
 });
 
@@ -19,21 +21,28 @@ export default function Navbar() {
         setMobileOpen(!mobileOpen);
     };
 
-    const menuItems = ["Accueil", "À propos", "Parours", "Projets"];
+    const menuItems = [
+        { label: "Accueil", path: "accueil" },
+        { label: "À propos", path: "apropos" },
+        { label: "Parcours", path: "parcours" },
+        { label: "Projets", path: "projets" },
+        { label: "Contact", path: "contact" },
+    ];
 
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" sx={{ backgroundColor: "#C5D86D", padding: 1 }}>
+                <AppBar position="fixed" sx={{ backgroundColor: "#C5D86D", padding: 1 }}>
                     <Toolbar>
                         <Typography
                             sx={{
                                 fontWeight: "bold",
                                 fontSize: "1.5rem",
                                 color: "#0d1321",
+                                cursor: "pointer",
                             }}
                         >
-                            Valentin Roth
+                            {content.navbar.title}
                         </Typography>
 
                         <Box sx={{ display: { xs: "block", md: "none" }, ml: "auto" }}>
@@ -44,12 +53,23 @@ export default function Navbar() {
 
                         <Box sx={{ display: { xs: "none", md: "block" }, ml: "2%" }}>
                             {menuItems.map((item) => (
-                                <Button key={item} variant="text" sx={{
-                                    color: "#0d1321",
-                                    fontWeight: "bold",
-                                    "&:hover": { transform: "scale(1.1)", color: "#0d1321" }
-                                }}>
-                                    {item}
+                                <Button
+                                    key={item.label}
+                                    component={Link}
+                                    to={item.path}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    offset={-70}
+                                    variant="text"
+                                    sx={{
+                                        color: "#0d1321",
+                                        fontWeight: "bold",
+                                        "&:hover": { transform: "scale(1.1)", color: "#0d1321" },
+                                        cursor: "pointer",
+                                    }}
+                                >
+                                    {item.label}
                                 </Button>
                             ))}
                         </Box>
@@ -60,12 +80,22 @@ export default function Navbar() {
                     anchor="right"
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
-                    sx={{ "& .MuiDrawer-paper": { bgcolor: "#C5D86D" }}}
+                    sx={{ "& .MuiDrawer-paper": { bgcolor: "#C5D86D" } }}
                 >
                     <List sx={{ width: 250 }}>
                         {menuItems.map((item) => (
-                            <ListItem button key={item} onClick={handleDrawerToggle}>
-                                <ListItemText primary={item} sx={{ color: "#0d1321", "&:hover": {transform: "scale(1.1)"} }} />
+                            <ListItem
+                                button
+                                key={item.label}
+                                component={Link}
+                                to={item.path}
+                                smooth={true}
+                                duration={500}
+                                offset={-70}
+                                onClick={handleDrawerToggle}
+                                sx={{ cursor: "pointer" }}
+                            >
+                                <ListItemText primary={item.label} sx={{ color: "#0d1321" }} />
                             </ListItem>
                         ))}
                     </List>
@@ -74,4 +104,3 @@ export default function Navbar() {
         </ThemeProvider>
     );
 }
-

@@ -1,0 +1,9 @@
+{
+  "about": {
+    "title": "À propos",
+    "presentation": "Je m'appelle Valentin et j'ai 19 ans. Je suis actuellement en dernière années de CFC d'informaticien en développement d'applications avec maturité integrée. En ce moment je fais essentiellement du frontend avec React. À coté je suis gardien de hockey sur glace depuis que j'ai 5ans, je joue actuellement en 2eme ligue au Monthey Chablais Hockey Club"
+  },
+  "navbar": {
+    "title": "Portfolio"
+  }
+}
