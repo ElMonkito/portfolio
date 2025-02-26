@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 const educationStages = [
-    {title: "École Primaire", name: "Attalens, Petit Prince", year: "2010 - 2017"},
+    {title: "École Primaire", name: "Attalens", year: "2010 - 2017"},
     {title: "École Secondaire", name: "Cycle d'orientation de la Veveyse", year: "2018 - 2021"},
     {title: "CFC Developpement d'application", name: "Bern, SBB-CFF-FFS", year: "août 2021 - juillet 2024"},
     {title: "CFC Developpement d'application", name: "Puidoux, Reist Telecom AG", year: "août 2024 - juillet 2025"},
