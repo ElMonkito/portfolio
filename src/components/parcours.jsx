@@ -16,7 +16,6 @@ export default function EducationTimeline() {
         <Box sx={{
             backgroundColor: "#0D1321",
             height: {xs: "85vh", md: "50vh"},
-            minHeight: "auto",
             display: "flex",
             marginTop: {xs: "10%", md: "3%"},
             flexDirection: {xs: "column", md: "row"},
