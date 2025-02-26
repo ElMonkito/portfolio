@@ -34,7 +34,7 @@ export default function LandingPage() {
                 }}
             >
                 <Slide direction="top" in={visible} timeout={800}>
-                    <Box sx={{maxWidth: "100%", marginTop: {xs: "7%", md: "0%"}}}>
+                    <Box sx={{maxWidth: "100%", marginTop: {xs: "20%", md: "0%"}}}>
                         <Typography variant="h1" sx={{color: "#C5D86D", fontSize: {xs: "3.3rem", md: "6rem"}}}>
                             Valentin Roth
                         </Typography>
