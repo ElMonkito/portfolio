@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import LandingPage from "./components/landingPage";
 import About from "./components/about"
 import Parcours from "./components/test"
+import Footer from "./components/footer"
 import Box from "@mui/material/Box";
 
 export default function App() {
@@ -29,6 +30,9 @@ export default function App() {
             {/*<Box id="contact">*/}
             {/*    <Contact />*/}
             {/*</Box>*/}
+            <Box>
+                <Footer />
+            </Box>
         </Box>
     );
 }

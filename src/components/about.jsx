@@ -8,7 +8,7 @@ import {Grow} from "@mui/material";
 export default function About() {
 
     return (
-        <Grow in={true} timeout={1000}>
+        <Grow in={true} timeout={1500}>
             <Box
                 sx={{
                     minHeight: {xs: "70vh", md: "75vh"},

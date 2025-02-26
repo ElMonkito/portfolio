@@ -4,21 +4,22 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import img from "../images/mui.png"
+import imgExtractor from "../images/data-extractor.png"
 
 export default function Carousel() {
     const projects = [
+        {
+            title: "Data Extractor",
+            image: imgExtractor,
+            link: "https://data-extractor-exemple.streamlit.app/"
+        },
         {
             title: "Material Ui",
             image: img,
             link: "https://mui.com/material-ui/all-components/"
         },
         {
-            title: "Material adsada",
-            image: img,
-            link: "https://mui.com/material-ui/all-components/"
-        },
-        {
-            title: "Material sdfgsd",
+            title: "Material Ui temp",
             image: img,
             link: "https://mui.com/material-ui/all-components/"
         }
