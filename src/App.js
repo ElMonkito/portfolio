@@ -23,14 +23,6 @@ export default function App() {
             <Box id="parcours">
                 <Parcours />
             </Box>
-
-            {/*<Box id="projets">*/}
-            {/*    <Projects />*/}
-            {/*</Box>*/}
-
-            {/*<Box id="contact">*/}
-            {/*    <Contact />*/}
-            {/*</Box>*/}
             <Box>
                 <Footer />
             </Box>
