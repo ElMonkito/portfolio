@@ -3,16 +3,11 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Button, IconButton, Drawer, List, ListItem, ListItemText, createTheme, ThemeProvider } from "@mui/material";
+import { Button, IconButton, Drawer, List, ListItem, ListItemText } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-scroll";
 import content from "../data/content.json";
 
-const theme = createTheme({
-    typography: {
-        fontFamily: "Rubik",
-    },
-});
 
 export default function Navbar() {
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -28,7 +23,6 @@ export default function Navbar() {
     ];
 
     return (
-        <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="fixed" sx={{ backgroundColor: "#C5D86D", padding: 1, minHeight: {xd: "80px", md: "120px"}, justifyContent: "center" }}>
                     <Toolbar>
@@ -100,6 +94,5 @@ export default function Navbar() {
                     </List>
                 </Drawer>
             </Box>
-        </ThemeProvider>
     );
 }

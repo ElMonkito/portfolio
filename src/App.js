@@ -6,9 +6,17 @@ import Parcours from "./components/parcours"
 import Footer from "./components/footer"
 import Box from "@mui/material/Box";
 import '../src/App.css'
+import {createTheme, ThemeProvider} from "@mui/material";
 
 export default function App() {
+    const theme = createTheme({
+        typography: {
+            fontFamily: "Rubik",
+        },
+    });
+
     return (
+        <ThemeProvider theme={theme}>
         <Box sx={{ minHeight: "100vh", overflowY: "auto" }}>
             <Navbar />
 
@@ -27,5 +35,6 @@ export default function App() {
                 <Footer />
             </Box>
         </Box>
+        </ThemeProvider>
     );
 }

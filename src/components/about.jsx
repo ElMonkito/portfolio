@@ -3,17 +3,10 @@ import Box from "@mui/material/Box";
 import portrait from "../images/portrait.jpg"
 import Typography from "@mui/material/Typography";
 import content from "../data/content.json"
-import {createTheme, Grow, ThemeProvider} from "@mui/material";
+import { Grow } from "@mui/material";
 
 export default function About() {
-    const theme = createTheme({
-        typography: {
-            fontFamily: "Rubik",
-        },
-    });
-
     return (
-        <ThemeProvider theme={theme}>
         <Grow in={true} timeout={1500}>
             <Box
                 sx={{
@@ -62,6 +55,5 @@ export default function About() {
                 </Box>
             </Box>
         </Grow>
-        </ThemeProvider>
     );
 }
