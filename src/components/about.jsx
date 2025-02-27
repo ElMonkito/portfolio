@@ -11,7 +11,7 @@ export default function About() {
         <Grow in={true} timeout={1500}>
             <Box
                 sx={{
-                    minHeight: {xs: "100vh", md: "75vh"},
+                    minHeight: {xs: "70vh", md: "75vh"},
                     display: "flex",
                     flexDirection: {xs: "column", md: "row"},
                     overflow: "hidden",
