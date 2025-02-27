@@ -30,12 +30,12 @@ export default function Navbar() {
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="fixed" sx={{ backgroundColor: "#C5D86D", padding: 1 }}>
+                <AppBar position="fixed" sx={{ backgroundColor: "#C5D86D", padding: 1, minHeight: {xd: "80px", md: "120px"}, justifyContent: "center" }}>
                     <Toolbar>
                         <Typography
                             sx={{
                                 fontWeight: "bold",
-                                fontSize: "1.5rem",
+                                fontSize: {xs: "1.8rem", md:"2.5rem"},
                                 color: "#0d1321",
                                 cursor: "pointer",
                             }}
@@ -44,8 +44,8 @@ export default function Navbar() {
                         </Typography>
 
                         <Box sx={{ display: { xs: "block", md: "none" }, ml: "auto" }}>
-                            <IconButton onClick={handleDrawerToggle} sx={{ color: "#0d1321" }}>
-                                <MenuIcon />
+                            <IconButton onClick={handleDrawerToggle} sx={{ color: "#0d1321"}}>
+                                <MenuIcon sx={{fontSize: "38px" }} />
                             </IconButton>
                         </Box>
 
@@ -61,6 +61,7 @@ export default function Navbar() {
                                     offset={-70}
                                     variant="text"
                                     sx={{
+                                        fontSize: "1.3rem",
                                         color: "#0d1321",
                                         fontWeight: "bold",
                                         "&:hover": { transform: "scale(1.1)", color: "#0d1321" },
