@@ -1,6 +1,6 @@
 import React from "react";
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot} from "@mui/lab";
-import {School} from "@mui/icons-material";
+import WorkIcon from '@mui/icons-material/Work';
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import {createTheme, ThemeProvider} from "@mui/material";
@@ -35,7 +35,7 @@ export default function EducationTimeline() {
                         <TimelineItem key={index}>
                             <TimelineSeparator>
                                 <TimelineDot color="primary">
-                                    <School/>
+                                    <WorkIcon sx={{ color: "#C5D86D"}}/>
                                 </TimelineDot>
                                 {index < educationStages.length - 1 && <TimelineConnector sx={{ height: {xs: "100px", md: "180px"} }}/>}
                             </TimelineSeparator>
