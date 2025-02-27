@@ -21,7 +21,7 @@ export default function LandingPage() {
                 height: {xs: "70vh", md: "75vh"},
                 display: "flex",
                 flexDirection: {xs: "column", md: "row"},
-                overflow: "hidden",
+                overflow: "auto",
             }}
         >
             <Box

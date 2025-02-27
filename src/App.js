@@ -12,7 +12,7 @@ export default function App() {
         <Box sx={{ minHeight: "100vh", overflowY: "auto" }}>
             <Navbar />
 
-            <Box id="accueil">
+            <Box id="accueil" >
                 <LandingPage />
             </Box>
 
