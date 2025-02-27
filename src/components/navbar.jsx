@@ -88,7 +88,7 @@ export default function Navbar() {
                                 onClick={handleDrawerToggle}
                                 sx={{ cursor: "pointer" }}
                             >
-                                <ListItemText primary={item.label} sx={{ color: "#0d1321" }} />
+                                <ListItemText primary={item.label} sx={{ color: "#0d1321", textAlign: "center"}} />
                             </ListItem>
                         ))}
                     </List>
