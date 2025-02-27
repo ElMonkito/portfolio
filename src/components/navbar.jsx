@@ -68,7 +68,6 @@ export default function Navbar() {
                         </Box>
                     </Toolbar>
                 </AppBar>
-
                 <Drawer
                     anchor="right"
                     open={mobileOpen}
