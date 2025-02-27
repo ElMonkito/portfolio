@@ -28,6 +28,7 @@ export default function EducationTimeline() {
                 marginTop: {xs: "10%", md: "3%"},
                 flexDirection: {xs: "column", md: "row"},
                 overflow: "hidden",
+                paddingBottom: {xs: "0%", md: "3%"}
             }}>
                 <Timeline position="alternate" sx={{marginTop: {xs: "15%", md: "3%"}}}>
                     {educationStages.map((stage, index) => (
