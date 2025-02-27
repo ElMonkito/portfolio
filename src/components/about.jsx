@@ -3,11 +3,17 @@ import Box from "@mui/material/Box";
 import portrait from "../images/portrait.jpg"
 import Typography from "@mui/material/Typography";
 import content from "../data/content.json"
-import {Grow} from "@mui/material";
+import {createTheme, Grow, ThemeProvider} from "@mui/material";
 
 export default function About() {
+    const theme = createTheme({
+        typography: {
+            fontFamily: "Rubik",
+        },
+    });
 
     return (
+        <ThemeProvider theme={theme}>
         <Grow in={true} timeout={1500}>
             <Box
                 sx={{
@@ -50,12 +56,12 @@ export default function About() {
                     <Typography variant="h2" sx={{width: "80%", color: "#C5D86D", marginTop: {xs: "7%", md: "0%"}}}>
                         {content.about.title}
                     </Typography>
-                    <Typography variant="h4" sx={{width: "80%", color: "#0D1321", fontSize: {xs: "1.5rem", md: "2rem"} }}>
+                    <Typography variant="h4" sx={{width: "80%", color: "#0D1321", fontSize: {xs: "1.5rem", md: "2rem"}, whiteSpace: "pre-line" }}>
                         {content.about.presentation}
                     </Typography>
                 </Box>
             </Box>
         </Grow>
-
+        </ThemeProvider>
     );
 }
