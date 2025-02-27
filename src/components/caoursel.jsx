@@ -72,13 +72,14 @@ export default function Carousel() {
                                     bottom: 0,
                                     left: 0,
                                     width: "100%",
-                                    bgcolor: "rgba(0, 0, 0, 0.6)",
+                                    bgcolor: "#0D1321",
+                                    opacity: "0.6",
                                     color: "white",
                                     textAlign: "center",
                                     py: 2
                                 }}
                             >
-                                <Typography variant="h5">{project.title}</Typography>
+                                <Typography variant="h5" sx={{ color: "#FFEDDF"}}>{project.title}</Typography>
                             </Box>
                         </Box>
                     </SwiperSlide>

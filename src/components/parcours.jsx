@@ -18,7 +18,7 @@ export default function EducationTimeline() {
             backgroundColor: "#0D1321",
             height: {xs: "120vh", md: "65vh"},
             display: "flex",
-            marginTop: {xs: "10%", md: "3%"},
+            paddingTop: {xs: "10%", md: "3%"},
             flexDirection: {xs: "column", md: "row"},
             overflow: "hidden",
             paddingBottom: {xs: "0%", md: "3%"}

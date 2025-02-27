@@ -10,6 +10,7 @@ export default function About() {
         <Grow in={true} timeout={1500}>
             <Box
                 sx={{
+                    backgroundColor: "#FFEDDF",
                     minHeight: {xs: "70vh", md: "75vh"},
                     display: "flex",
                     flexDirection: {xs: "column", md: "row"},
