@@ -23,7 +23,7 @@ export default function EducationTimeline() {
         <ThemeProvider theme={theme}>
             <Box sx={{
                 backgroundColor: "#0D1321",
-                height: {xs: "100vh", md: "65vh"},
+                height: {xs: "120vh", md: "65vh"},
                 display: "flex",
                 marginTop: {xs: "10%", md: "3%"},
                 flexDirection: {xs: "column", md: "row"},
