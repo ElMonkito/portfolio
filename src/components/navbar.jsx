@@ -74,7 +74,7 @@ export default function Navbar() {
                     onClose={handleDrawerToggle}
                     sx={{ "& .MuiDrawer-paper": { bgcolor: "#C5D86D" } }}
                 >
-                    <List sx={{ width: 250 }}>
+                    <List sx={{ width: 250, marginTop: "20%" }}>
                         {menuItems.map((item) => (
                             <ListItem
                                 button

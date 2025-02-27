@@ -14,12 +14,12 @@ export default function Carousel() {
             link: "https://data-extractor-exemple.streamlit.app/"
         },
         {
-            title: "Material Ui",
+            title: "Material UI",
             image: img,
             link: "https://mui.com/material-ui/all-components/"
         },
         {
-            title: "Material Ui temp",
+            title: "Material UI temp",
             image: img,
             link: "https://mui.com/material-ui/all-components/"
         }
