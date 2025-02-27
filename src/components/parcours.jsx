@@ -23,7 +23,7 @@ export default function EducationTimeline() {
         <ThemeProvider theme={theme}>
             <Box sx={{
                 backgroundColor: "#0D1321",
-                height: {xs: "100vh", md: "50vh"},
+                height: {xs: "100vh", md: "65vh"},
                 display: "flex",
                 marginTop: {xs: "10%", md: "3%"},
                 flexDirection: {xs: "column", md: "row"},
@@ -36,11 +36,11 @@ export default function EducationTimeline() {
                                 <TimelineDot color="primary">
                                     <School/>
                                 </TimelineDot>
-                                {index < educationStages.length - 1 && <TimelineConnector/>}
+                                {index < educationStages.length - 1 && <TimelineConnector sx={{ height: {xs: "100px", md: "180px"} }}/>}
                             </TimelineSeparator>
                             <TimelineContent sx={{color: "white"}}>
-                                <Typography variant="h6" sx={{color: "#C5D86D"}}>{stage.title}</Typography>
-                                <Typography color="textSecondary" sx={{color: "#FFEDDF"}}>{stage.name}</Typography>
+                                <Typography variant="h6" sx={{color: "#C5D86D", fontSize: {xs: "1.3rem", md: "1.5rem"} }}>{stage.title}</Typography>
+                                <Typography color="textSecondary" sx={{color: "#FFEDDF", fontSize: {xs: "0.9rem", md: "1.2rem"} }}>{stage.name}</Typography>
                                 <Typography color="textSecondary" sx={{color: "#FFEDDF"}}>{stage.year}</Typography>
                             </TimelineContent>
                         </TimelineItem>
