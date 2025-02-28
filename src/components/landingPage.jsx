@@ -18,7 +18,7 @@ export default function LandingPage() {
         <Box
             sx={{
                 backgroundColor: "#0D1321",
-                height: {xs: "70vh", md: "75vh"},
+                height: {xs: "70vh", md: "100vh"},
                 display: "flex",
                 flexDirection: {xs: "column", md: "row"},
                 overflow: "auto",

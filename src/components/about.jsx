@@ -11,7 +11,7 @@ export default function About() {
             <Box
                 sx={{
                     backgroundColor: "#FFEDDF",
-                    minHeight: {xs: "70vh", md: "75vh"},
+                    minHeight: {xs: "70vh", md: "100vh"},
                     display: "flex",
                     flexDirection: {xs: "column", md: "row"},
                     overflow: "hidden",
