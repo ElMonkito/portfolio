@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import img from "../images/mui.png"
 import imgExtractor from "../images/data-extractor.png"
+import imgGameday from "../images/gameday_img.png"
 
 export default function Carousel() {
     const projects = [
@@ -14,12 +15,12 @@ export default function Carousel() {
             link: "https://data-extractor-exemple.streamlit.app/"
         },
         {
-            title: "Material UI",
-            image: img,
-            link: "https://mui.com/material-ui/all-components/"
+            title: "Game of the day!",
+            image: imgGameday,
+            link: "https://gameday-frontend.vercel.app/"
         },
         {
-            title: "Material UI temp",
+            title: "Material UI",
             image: img,
             link: "https://mui.com/material-ui/all-components/"
         }
