@@ -1,8 +1,8 @@
-import { Box, Typography } from "@mui/material";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Box, Typography} from "@mui/material";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import {Navigation} from "swiper/modules";
 import img from "../images/mui.png"
 import imgExtractor from "../images/data-extractor.png"
 import imgGameday from "../images/gameday_img.png"
@@ -10,14 +10,14 @@ import imgGameday from "../images/gameday_img.png"
 export default function Carousel() {
     const projects = [
         {
-            title: "Data Extractor",
-            image: imgExtractor,
-            link: "https://data-extractor-exemple.streamlit.app/"
-        },
-        {
             title: "Game of the day!",
             image: imgGameday,
             link: "https://gameday-frontend.vercel.app/"
+        },
+        {
+            title: "Data Extractor",
+            image: imgExtractor,
+            link: "https://data-extractor-exemple.streamlit.app/"
         },
         {
             title: "Material UI",
@@ -26,14 +26,14 @@ export default function Carousel() {
         }
     ]
     return (
-        <Box sx={{ width: "80%", margin: "auto", alignContent: "center" }}>
+        <Box sx={{width: "80%", margin: "auto", alignContent: "center"}}>
             <Swiper
                 navigation={true}
                 modules={[Navigation]}
                 spaceBetween={30}
                 slidesPerView={1}
                 loop={true}
-                style={{ borderRadius: "10px", overflow: "hidden" }}
+                style={{borderRadius: "10px", overflow: "hidden"}}
             >
                 {projects.map((project, index) => (
                     <SwiperSlide key={index}>
@@ -80,7 +80,7 @@ export default function Carousel() {
                                     py: 2
                                 }}
                             >
-                                <Typography variant="h5" sx={{ color: "#FFEDDF"}}>{project.title}</Typography>
+                                <Typography variant="h5" sx={{color: "#FFEDDF"}}>{project.title}</Typography>
                             </Box>
                         </Box>
                     </SwiperSlide>
